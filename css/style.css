@@ -122,6 +122,11 @@ ol {
 	position: relative;
 }
 
+.sort-select{
+	border: none;
+	padding-left: 20px;
+}
+
 .section-title h2:after {
 	position: absolute;
 	left: 0;

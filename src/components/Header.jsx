@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-
-
+import { Link } from 'react-router-dom';
 const Header = () => {
     const [showMenu, setShowMenu] = useState(false);
 
@@ -51,10 +50,10 @@ const Header = () => {
         <nav className="humberger__menu__nav mobile-menu">
   <ul>
     <li className="active">
-      <a href="./index.html">Home</a>
+      <Link to={'/'}>Home</Link>
     </li>
     <li>
-      <a href="./shop-grid.html">Shop</a>
+      <Link to={'/shop'}>Shop</Link>
     </li>
     <li>
         <a href="#" onClick={handlePagesClick}>
@@ -63,16 +62,16 @@ const Header = () => {
         {showPagesDropdown && (
           <ul className="header__menu__dropdown">
             <li>
-              <a href="./shop-details.html">Shop Details</a>
+              <Link to={'/shop-details'}>Shop Details</Link>
             </li>
             <li>
-              <a href="./shoping-cart.html">Shoping Cart</a>
+              <Link to={'/cart'}>Shoping Cart</Link>
             </li>
             <li>
-              <a href="./checkout.html">Check Out</a>
+              <Link to={'/check-out'}>Check Out</Link>
             </li>
             <li>
-              <a href="./blog-details.html">Blog Details</a>
+              <Link to={'/blog-details'}>Blog Details</Link>
             </li>
           </ul>
         )}
@@ -152,14 +151,14 @@ const Header = () => {
                 <div class="col-lg-6">
                     <nav class="header__menu">
                         <ul>
-                            <li class="active"><a href="./index.html">Home</a></li>
-                            <li><a href="./shop-grid.html">Shop</a></li>
+                            <li class="active"><Link to={'/'}>Home</Link></li>
+                            <li><Link to={'/shop'}>Shop</Link></li>
                             <li><a href="#">Pages</a>
                                 <ul class="header__menu__dropdown">
-                                    <li><a href="./shop-details.html">Shop Details</a></li>
-                                    <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                                    <li><a href="./checkout.html">Check Out</a></li>
-                                    <li><a href="./blog-details.html">Blog Details</a></li>
+                                    <li><Link to={'/shop-details'}>Shop Details</Link></li>
+                                    <li><Link to={'/cart'}>Shoping Cart</Link></li>
+                                    <li><Link to={'/check-out'}>Check Out</Link></li>
+                                    <li><Link to={'/blog-details'}>Blog Details</Link></li>
                                 </ul>
                             </li>
                             <li><a href="./blog.html">Blog</a></li>

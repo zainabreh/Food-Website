@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const AllCategory = () => {
-  const [showList, setShowList] = useState(true);
+  const [showList, setShowList] = useState(false);
 
   const handleClick = () => {
     setShowList(!showList);

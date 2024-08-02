@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
     <>
@@ -13,14 +13,14 @@ const Navbar = () => {
                 <div className="col-lg-6">
                     <nav className="header__menu">
                         <ul>
-                            <li className="active"><a href="./index.html">Home</a></li>
-                            <li><a href="./shop-grid.html">Shop</a></li>
+                            <li className="active"><Link to={'/'}>Home</Link></li>
+                            <li><Link to={'/shop'}>Shop</Link></li>
                             <li><a href="#">Pages</a>
                                 <ul className="header__menu__dropdown">
-                                    <li><a href="./shop-details.html">Shop Details</a></li>
-                                    <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                                    <li><a href="./checkout.html">Check Out</a></li>
-                                    <li><a href="./blog-details.html">Blog Details</a></li>
+                                    <li><Link to={'/shop-details'}>Shop Details</Link></li>
+                                    <li><Link to={'/cart'}>Shoping Cart</Link></li>
+                                    <li><Link to={'/check-out'}>Check Out</Link></li>
+                                    <li><Link to={'/blog-details'}>Blog Details</Link></li>
                                 </ul>
                             </li>
                             <li><a href="./blog.html">Blog</a></li>
